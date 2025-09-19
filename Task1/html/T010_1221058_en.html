@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Project Page - Networking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f6fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      color: #0078D7;
+      margin-bottom: 20px;
+    }
+    .container {
+      background-color: #e9f1ff;
+      width: 100%;
+      max-width: 450px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 80%;
+      padding: 12px;
+      background-color: #0078D7;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    p {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to My Networking Resource Page</h1>
+
+   
+    <form action="/" method="get">
+        <input type="text" name="file" placeholder="Enter file name (e.g., notes.txt or report.pdf)">
+        <button type="submit">Search File</button>
+    </form>
+
+    <p> If the file exists, the server will send it directly.</p>
+    <p> If the filename contains "private", access will be denied (403 Forbidden).</p>
+    <p> If the file does not exist, a 404 Not Found message will appear.</p>
+  </div>
+
+</body>
+</html>
+
